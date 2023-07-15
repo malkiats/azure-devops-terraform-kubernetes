@@ -9,7 +9,7 @@ trigger:
 pool: devmaster
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello, world! Changed
   displayName: 'Run a one-line script'
 
 - script: |
