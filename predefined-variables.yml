@@ -26,7 +26,7 @@ stages:
     - bash: java -version
     - bash: node --version
     - bash: python --version
-    - bash: mvn -v
+    - bash: mvn --version
     - bash: ls -R (Build.ArtifactStagingDirectory)
 
     - task: CopyFiles@2
