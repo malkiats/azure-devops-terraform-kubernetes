@@ -1,14 +1,14 @@
 trigger:
 - master
 
-strategy:
-  matrix:
-    linux:
-      operatingSystem: 'devmaster'
-    mac:
-      operatingSystem: 'devmaster'
+# strategy:
+#   matrix:
+#     linux:
+#       operatingSystem: 'devmaster'
+#     mac:
+#       operatingSystem: 'devmaster'
 
-pool: $(operatingSystem)
+pool: devmaster
 
 steps:
 - script: echo Running on $(operatingSystem)
