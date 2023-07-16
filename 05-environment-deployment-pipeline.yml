@@ -4,12 +4,11 @@ trigger:
 strategy:
   matrix:
     linux:
-      operatingSystem: 'Linux'
+      operatingSystem: 'devmaster'
     mac:
-      operatingSystem: 'macos-latest'
+      operatingSystem: 'devmaster'
 
-pool: 
-  vmImage: $(operatingSystem)
+pool: $(operatingSystem)
 
 steps:
 - script: echo Running on $(operatingSystem)
